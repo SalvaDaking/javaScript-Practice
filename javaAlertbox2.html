@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display more information on this page</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="test"></p>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Press a button!") == true) {
+        x = "You pressed OK!, now you are going to see more stuff!!!!";
+    } else {
+        x = "Why did you press cancel, you hurt my feelings.";
+    }
+    document.getElementById("test").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

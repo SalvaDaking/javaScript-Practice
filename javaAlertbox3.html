@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button so we can take your information and sell it to third party vendors.</p>
+
+<button onclick="myFunction()">Click Me</button>
+
+<p id="name"></p>
+
+<script>
+function myFunction() {
+    var nameEntered = prompt("Please enter your name", " Example: John Smith ");
+    //var doubleSecret;
+	
+    if (nameEntered != null) {
+        document.getElementById("name").innerHTML =
+        "Hello " + nameEntered + "! How are you today?";
+    }
+		//else(nameEntered == doubleSecret){
+		//document.getElementByID("name").innerHTML = 
+		//"Hello " + nameEntered + " the secrete password is Chinese";
+	}
+</script>
+
+</body>
+</html>
